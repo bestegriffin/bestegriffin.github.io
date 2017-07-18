@@ -1,0 +1,108 @@
+/* Color CSS */
+
+#name {
+	float: left;
+	margin-left: 5%;
+	text-align: center;
+	width: 35%;}
+	
+	
+nav {
+	text-align: center;
+	padding: 10px;
+	margin: 20px 0 0;
+}
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+
+nav li {
+ display: inline-block;
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+	text-decoration: none;
+}
+.navbar>li {
+	border-right: 10px solid #000;
+}
+.navbar>li:last-child{
+	border:none;
+}
+body {
+	background:url(../images/whirlpool.png)
+}
+body p {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777;}
+
+a {
+text-decoration: none;
+}
+
+.mainHeader {
+	background: #fff;
+	border-color: #ccc;
+	border-bottom: solid 5px medium;}
+
+
+.maincontent {
+	background:#fff;
+	border-color: #ddd;
+	width: 50%;
+	float: left;
+	margin-top: 5%;
+	margin-left: 5%;
+	}
+
+.profilePhoto {
+	max-width: 250px;
+	float: left;
+	margin-left: 50px;
+	height: 250px;
+	
+}
+
+.connect {
+	float:right;
+	background:#fff;
+	border-color: #ddd;
+	width: 25%;
+	margin-top: 5%;
+	margin-right:10%;
+	}
+	
+footer {
+clear: both;
+display: block;
+text-align: center;
+padding-top: 50px;
+color: #666;
+position: relative;
+bottom:0;
+
+}
+
+.icon {
+	width:20%;
+	display: inline;
+	margin: 5% 10% 10% 10%;
+	padding:5px;
+	
+}
+
+
+/*Main Content Css */
+
+
+
+
+
+
+/*Footer CSS*/
+
+
