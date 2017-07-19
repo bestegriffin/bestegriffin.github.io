@@ -90,6 +90,11 @@
 		width: 960px;
 		}
 		
+		.borderRight {
+			border-right: 1px solid #ddd;
+			padding-right: 20px;
+		}
+		
 	/*MainContent Css*/
 	
 		.ProfilePhoto {
