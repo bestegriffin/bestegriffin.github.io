@@ -1,15 +1,9 @@
 
-h1, h2, h3 {
+h1 h2 h3 {
 	font-family:"Georgia", Times, Times New Roman, serif;
 }
 
 h2 {
-	font-size:44px;
-	margin-left: 30px;
-	margin-top:10px;
-	color:#4aaaac;
-}
-h3 {
 	font-size:24px;
 	margin-left: 30px;
 	margin-top:10px;
@@ -86,87 +80,65 @@ header {
 width: 960px;
 }
 
-   .main-content {
-        background: #FFFFFF;
-        max-width:670px;
-		border:1px solid #000;
-		}
-/*
+   .maincontent {
+        background-color: #FFFFFF;
+        float: left;
+        max-width:650px;
         margin-top: 50px;
         margin-bottom: 50px;
         padding-bottom:30px;
-        padding-right: 50px;
     }
-*/
 
-/*
  .maincontent ul {
         list-style: none;
     }
-*/
-/*
     .maincontent ul li {
+        float: left;
         margin: 5px;
         width: 200px;
         position: relative;
     }
-*/
-/*
     .maincontent ul li img { 
         width: 100%;
         height: auto;
 
     }
-*/
-/*
     .maincontent ul li span {
+    position:absolute;
     bottom:20px;
     left:0px;
     width: 100%;
     text-align: center;
     background: #4aaaac;
     }
-*/
 
 .maincontent p{
-	margin:20px 20px 30px 10px;
+	margin:20px 20px 30px 30px;
 
 }
 	
 .ProfilePhoto {
-	margin:10px 20px 10px 20px ;
-	width:200px;
+	margin:20px 20px 10px 30px ;
+	width:20%;
 	float:left;
-	height:200px;
 }
 .aside p {
 	margin-top: 20px;
 	padding-right: 40px;
+	padding-bottom: 10px;
 	padding-left: 20px;
 }
 .aside {
 	background-color: #FFFFFF;
 	border: 1px solid #ccc;
-	float: right;
+	float: left;
 	max-width:270px;
 	display: block;
 	margin-top: 50px;
-	height:175px;
-
-
-
-}
-div.aside {
-	margin-left:100px;
-}
-
-.img1 {
-	position:absolute;
-	bottom:20px;
-	display:inline-block;
+	
 }
 .aside h3 {
-	font-size: 25px;
+	font-size: 20px;
 	margin: 0px 0 0 30px;
 	border-bottom: 3px solid #ddd;
 	margin-right: 25px;
@@ -177,12 +149,10 @@ div.aside {
 	
 .icon {
 	width:60px;
-	display:inline-block;;
-	margin-left: 13px;
-	padding-bottom: 13px;
-	height:90px;
+	display:inline-block;
+	padding:px;
+	margin: 10px;
 }
-
 
 footer {
 clear:both;
@@ -195,7 +165,6 @@ position:sticky;
 bottom:0;
 left:0;
 right:0;
-z-index: 1000000;
 
 }
 
@@ -247,11 +216,23 @@ width:150px;
     padding: 20px;margin-bottom: 00px;
 	color: #777;
 }
-
+/*
 #wrapper {
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 0 5%;	
+}
+*/
+img {
+height:"";
+width:40%;
+float: left;
+display: inline-block;
+position:relative;
+margin-right:2px;
+margin: 0 auto;
+margin:30px;
+border:1px solid #ddd;
 }
 
  
@@ -266,16 +247,16 @@ background: #4aaaac;
 }
  
  
-
-.gallery li {
+/*
+gallery li {
 float: right;
 margin: 2.5%;
 background-color: #fff;
 color:#fff;
 }
+*/
 
-
-
+/*
 #gallery p{
 	margin: 0;
 	padding: 5%;
@@ -284,31 +265,15 @@ color:#fff;
 	position:absolute;
 	bottom:0px;
 }
+*/
 
-#Portfolio {
-	max-width:650px;
-	float: left;
-	background-color: #FFFFFF;
-    margin-top: 50px;
-   	margin-bottom: 50px;
-    padding-bottom:30px;
-    padding-left:40px;
-	}
-	#Portfolio2 {
-	width:650px;
-	float: left;
-	background-color: #FFFFFF;
-    margin-top: 50px;
-   	margin-bottom: 50px;
-    padding-bottom:30px;
-    padding-left:40px;
-}
 .image {
-	max-height:175px;
-	max-width:250px;
-	border: 1px solid #ccc;
+	position:relative;
+	width: 300px;
 	float:left;
-	margin:35px 30px 0px 0px;
+	display:inline-block;
+	margin: 10px;
+	border: 1px solid #ddd;
 }
 
 
@@ -320,26 +285,6 @@ color:#fff;
 font-size:20px;
 
 }
-.boxlabel1 {
-	width: 250px;
-	height:50px;
-	background-color: #4aaaac;
-	position: absolute;
-	z-index: 3;
-	margin-top:110px;
-}
-
-.boxlabel1 p{
-	font-family: "Georgia", Times, Times New Roman, "serif";
-	color:#fff;
-	font-size: 130%;
-	padding-top:15px;
-	text-align: center;
-}
-img {
-	width: 250px;
-	height: 175px;
-}
 
 
 .banner {
@@ -349,19 +294,4 @@ position:absolute;
 bottom: 10px;
 left:0;
 z-index: 1000000;
-}
-
-
-div h3 {
-    font-size: 25px;
-    margin: 0px 0 0 30px;
-    border-bottom: 3px solid #ddd;
-    margin-right: 25px;
-    padding: 20px 0;
-   
-}
-
-section p{
- margin:10px 20px 30px 10px;
-
 }
