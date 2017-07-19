@@ -1,108 +1,292 @@
-/* Color CSS */
+	/*Body CSS Adjustments*/
 
-#name {
-	float: left;
-	margin-left: 5%;
-	text-align: center;
-	width: 35%;}
+		body {
+			background: url(../images/whirlpool.png);
+			font-family: "Arial", Hevletica Neue, Helvetica, sans-serif;
 	
+
+		}
+		
+		h1, h2, h3 {
+			font-family:"Georgia", Times, Times New Roman, serif;
+		}
+
+		h2 {
+			font-size:44px;
+			margin-left: 30px;
+			margin-top:10px;
+			color:#4aaaac;
+		}
+		h3 {
+			font-size:24px;
+			margin-left: 30px;
+			margin-top:10px;
+			color:#4aaaac;
+		}
+
+		.sizing {
+		max-width: 960px;
+		margin: 0 auto;
+		}
+
+		p {
+		color: #777;
+		}
+		
+	/*Header CSS*/
+
+
+
+		.full {
+			background-color: #fff;
+			overflow: hidden;
+			width: 100%;
+			border-bottom: 2px solid #ccc;
+		}
+		
+		.topnav {
+			background-color: #fff;
+			overflow: hidden;
+			width: 100%;
+		}
+		
+		.topnav a {
+			float:right;
+			display: block;
+			color: #D1D1D1;
+			text-align: center;
+			padding: 35px  5px;
+			text-decoration: none;
+			font-size: 15px;
+			margin-right: 20px;
+		}
+		
+		header {
+			background-color:#fff;
+			position: relative;
+
+
+		}
+		
+		.namecard {
+			position:absolute;
+		}
+		
+		#TheTopNav {
+			float: left;
+			display: block;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+			font-size: 25px;
+			background-color: #4aaaa5;
+			position:absolute;
+			bottom:0px;
+			left:30px;
+			padding:35px;
+		}
+		
+		.container {
+		width: 960px;
+		}
+		
+	/*MainContent Css*/
 	
-nav {
-	text-align: center;
-	padding: 10px;
-	margin: 20px 0 0;
-}
-nav ul {
-	list-style: none;
-	margin: 0 10px;
-	padding: 0;
-}
-
-nav li {
- display: inline-block;
-}
-
-nav a {
-	font-weight: 800;
-	padding: 15px 10px;
-	text-decoration: none;
-}
-.navbar>li {
-	border-right: 10px solid #000;
-}
-.navbar>li:last-child{
-	border:none;
-}
-body {
-	background:url(../images/whirlpool.png)
-}
-body p {
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color: #777;}
-
-a {
-text-decoration: none;
-}
-
-.mainHeader {
-	background: #fff;
-	border-color: #ccc;
-	border-bottom: solid 5px medium;}
+		.ProfilePhoto {
+		margin:10px 20px 10px 20px ;
+		width:200px;
+		float:left;
+		height:200px;
+		}
+		
+		.aside p {
+			margin-top: 20px;
+			padding-right: 40px;
+			padding-left: 20px;
+		}
+		
+		.aside {
+			background-color: #FFFFFF;
+			border: 1px solid #ccc;
+			float: right;
+			max-width:270px;
+			display: block;
+			margin-top: 50px;
+			height:175px;
 
 
-.maincontent {
-	background:#fff;
-	border-color: #ddd;
-	width: 50%;
-	float: left;
-	margin-top: 5%;
-	margin-left: 5%;
+
+		}
+		
+		div.aside {
+			margin-left:100px;
+		}
+
+		.img1 {
+			position:absolute;
+			bottom:20px;
+			display:inline-block;
+		}
+		
+		.aside h3 {
+			font-size: 25px;
+			margin: 0px 0 0 30px;
+			border-bottom: 3px solid #ddd;
+			margin-right: 25px;
+			padding:20px 0;
+			color:#4aaaa5;
+			text-align: center;
+			}
+
+		.icon {
+			width:60px;
+			display:inline-block;;
+			margin-left: 13px;
+			padding-bottom: 13px;
+			height:90px;
+		}
+		
+		section p{
+ margin:10px 20px 30px 10px;
+
+}
+		
+	/*Footer CSS*/
+	
+				footer {
+		clear:both;
+		text-align: center;
+		padding:50px;
+		background:#666;
+		color:#fff;
+		border-top:10px solid #4aaaa5;
+		position:sticky;
+		bottom:0;
+		left:0;
+		right:0;
+		z-index: 1000000;
+
+		}
+
+
+	/*Contact Form CSS*/
+	
+		input[type=text], select, textarea {
+		width: 100%;
+		padding: 12px;  
+		border: 1px solid #ccc; 
+		border-radius: 4px; 
+		box-sizing: border-box; 
+		margin-top: 6px;
+		margin-bottom: 16px; 
+		resize: vertical;
+		color:#ddd;
 	}
 
-.profilePhoto {
-	max-width: 250px;
-	float: left;
-	margin-left: 50px;
-	height: 250px;
-	
+		input[type=email], select, textarea {
+		width: 100%; 
+		padding: 12px; 
+		border: 1px solid #ccc; 
+		border-radius: 4px; 
+		box-sizing: border-box; 
+		margin-top: 6px; 
+		margin-bottom: 16px; 
+		resize: vertical;
+		color:#777;
 }
 
-.connect {
-	float:right;
-	background:#fff;
-	border-color: #ddd;
-	width: 25%;
-	margin-top: 5%;
-	margin-right:10%;
+		input[type=submit] {
+			background-color: #4aaaac;
+			color: #ddd;
+			padding: 12px 20px;
+			border: none;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #1E4B4B;
+
+		}
+		
+		#submit {
+		font-size: 20px;
+		width:150px;
+		}
+
+		.basicform {
+			border-radius: 5px;
+			background-color: #fff;
+			padding: 20px;margin-bottom: 00px;
+			color: #777;
+		}
+		
+	/*	Portfolio Specific CSS	*/
+	
+		#Portfolio {
+		max-width:650px;
+		float: left;
+		background-color: #FFFFFF;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		padding-bottom:30px;
+		padding-left:40px;
+		}
+		
+		#Portfolio2 {
+	width:650px;
+	float: left;
+	background-color: #FFFFFF;
+    margin-top: 50px;
+   	margin-bottom: 50px;
+    padding-bottom:30px;
+    padding-left:40px;
+}
+
+		.image {
+		max-height:175px;
+		max-width:250px;
+		border: 1px solid #ccc;
+		float:left;
+		margin:35px 30px 0px 0px;
 	}
 	
-footer {
-clear: both;
-display: block;
-text-align: center;
-padding-top: 50px;
-color: #666;
-position: relative;
-bottom:0;
+		.h2 {
+		position:absolute;
+		bottom:32px;
+		left:0;
+		color:#fff;
+		font-size:20px;
 
-}
+		}
+		
+		.boxlabel1 {
+			width: 250px;
+			height:50px;
+			background-color: #4aaaac;
+			position: absolute;
+			z-index: 3;
+			margin-top:110px;
+		}
 
-.icon {
-	width:20%;
-	display: inline;
-	margin: 5% 10% 10% 10%;
-	padding:5px;
-	
-}
+		.boxlabel1 p{
+			font-family: "Georgia", Times, Times New Roman, "serif";
+			color:#fff;
+			font-size: 130%;
+			padding-top:15px;
+			text-align: center;
+		}
+		
+		img {
+			width: 250px;
+			height: 175px;
+		}
 
+		div h3 {
+			font-size: 25px;
+			margin: 0px 0 0 30px;
+			border-bottom: 3px solid #ddd;
+			margin-right: 25px;
+			padding: 20px 0;
 
-/*Main Content Css */
-
-
-
-
-
-
-/*Footer CSS*/
-
-
+		}
+		

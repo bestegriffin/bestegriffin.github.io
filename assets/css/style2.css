@@ -294,7 +294,7 @@ color:#fff;
     padding-bottom:30px;
     padding-left:40px;
 	}
-	#Portfolio2 {
+#Portfolio2 {
 	width:650px;
 	float: left;
 	background-color: #FFFFFF;
@@ -310,8 +310,6 @@ color:#fff;
 	float:left;
 	margin:35px 30px 0px 0px;
 }
-
-
 .h2 {
 position:absolute;
 bottom:32px;
@@ -342,14 +340,6 @@ img {
 }
 
 
-.banner {
-background: #4aaaac;
-width:100%;
-position:absolute;
-bottom: 10px;
-left:0;
-z-index: 1000000;
-}
 
 
 div h3 {
