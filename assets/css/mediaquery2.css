@@ -1,0 +1,113 @@
+ @media screen and (min-width:769px) and (max-width: 980px) {
+  #masthead{
+ 	max-width: 980px;
+	padding-right:80px;
+ }
+ #masthead a{
+ 	max-width: 980px;
+	
+ }
+ #logo {
+ margin-left: 60px;
+ }
+ .sidebar {
+max-width: 260px;
+margin-right:70px;
+
+}
+ 
+.main-section {
+max-width: 500px;
+margin-left:50px;
+padding-left:25px;
+}
+  .auth-image {
+width: 88%;
+float: none;
+}
+#contact-form {
+margin-right:20px;
+}
+.work {
+width:100%;
+}
+ 
+ 
+ 
+ }
+ @media screen and (min-width:641px) and (max-width: 768px) {
+ #masthead{
+ 	max-width: 768px;
+ }
+ #masthead a{
+ 	max-width: 768px;
+	margin-right:20px;
+ }
+ #logo {
+ margin-left: 20px;
+ }
+ .sidebar {
+max-width: 720px;
+margin-right:26px;
+
+}
+ 
+.main-section {
+max-width: 720px;
+margin-left:20px;
+}
+  .auth-image {
+width: 50%;
+float: left;
+}
+
+}
+ 
+@media screen and (min-width:440px) and (max-width: 640px) {
+ #masthead{
+ 	max-width: 640px;
+	margin:0 auto;
+	position:static;
+ }
+ #logo, nav{
+ 	width:100%;
+ }
+ nav {
+ text-align: center;
+ margin-bottom: 20px;
+ }
+ nav a{
+ margin: 0 60px 0 60px;
+ }
+ #main-container, container .main-section {
+ max-width:640px;
+ margin: 0px 20px;
+ 
+ }
+ .main-section {
+  width: 93%;
+  max-width: 640px;
+  border: 1px solid #ddd;
+  margin-top: -90px;
+  }
+  
+.sidebar {
+max-width: 590px;
+margin-right:50px
+}
+
+.auth-image {
+width: 100%;
+float: none;
+}
+
+.about {
+margin-top: 10px;
+}
+
+.work {
+width:100%;
+}
+
+}
+
