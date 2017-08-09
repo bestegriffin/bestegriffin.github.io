@@ -1,74 +1,83 @@
-<!doctype html>
+<doctype html>
 <html>
 <head>
-<title>Homepage - Griffin Beste Portfolio</title>
-<!-- Latest compiled and minified CSS -->
-<!--<link rel="stylesheet" href="assets/css/normalize.css" type="text/css">-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/stylebs.css" type="text/css">
+    <title> Week 4- TOTEM Collector</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+   <link rel="stylesheet" href="assets/css/myStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-<!--Header Content-->
-<div id="wrap">
-<nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <!-- LOGO -->
-                        <div class="nav_name pull-left col-xs-12 col-sm-6 col-md-4">
-                         <!-- Brand and toggle get grouped for better mobile display -->
-                            <div class="navbar-header">
-                                <h2>Griffin Beste</h2>
-                            </div>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="nav_items col-xs-12 col-sm-6 col-md-8">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="index.html">About</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-</nav>
-  
-  
-  
-  <!-- /.container-fluid -->
-<!--Main Content and Biography-->
- 	<section class="container-fluid">
-	 		<div class=" panel panel-default pull-left col-xs-12 col-sm-12 col-md-8 MainContent">
-	 		<div class="panel-heading">
-	 			<h3>About Me</h3>
-				</div>
-					<div class="panel-body">
-					<img src="assets/images/headshot.jpg" class=" img img-responsive pull-left">
-						<p class="text">Hey! My name is Griffin. I'm a professional photographer who is on a temporary homestead to the illustrious city of Cleveland Ohio for the next couple years. I enjoy spending time hanging out with my miniature Australian Shepherd and drinking craft beer. I come from Denver Colorado so my tastes in beer tend to be expensive, and because of that, I work as a marketer for Edge of the Box Marketing in Pepper Pike Ohio.
-						I am a German/American with dual citizenship, although I don't speak a lick of German (I really should learn it)...but I digress... I'll just stick to being partially fluent in Spanish. I enjoy traveling to other countries and experiencing cultures other than my own, I am a thrill seeker and with enough coin, I would travel the world until I die. My favorite activities are playing soccer, snowboarding, hiking, mountain biking, wakeboarding, surfing, playing pickup basketball, and doing 5k and 10k obstacle run courses..</p>
-					</div>
-					</div>
-			<div class="sidebar container-fluid col-xs-12 col-sm-12 col-md-4">
-				<div class="panel panel-default aside noborder col-md-offset-2 col-md-9">
-  					<div class="panel-heading">
-    					<h3>Connect with Me</h3>
-  					</div>
-					<div class="panel-body">
-						<img src="assets/images/if_github-square-social-media_764894.png" class="glyphicon img-responsive">
-						<img src="assets/images/if_square-linkedin_317725.png" class="glyphicon" >
-						<img src="assets/images/if_stackoverflow-square-social-media_764927.png" class="glyphicon">
-					</div>
-			</div>
-</div>
+    
+	<div class="container ">
 
-</section>
-
-<!--Footer and Copy-->
-	   <div id="push"></div>
-	</div> <!--- Closed Wrap id ---->
-		<div id="footer">
-		  <div class="container">
-			<p>Copyright Griffin Beste 2017</p>
-		  </div>
+		<div class="jumbotron animated fadeInUpBig">
+			<h1>Totem Collector!</h1>
+			<h4>You will be given a random number at the start of the game.</h4>
+			<h4>There are four totems below. By clicking on a totem you will add a specific amount of points to your total score.</h4>
+			<h4>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.</h4>
+			<h4>The value of each totem is hidden from you until you click on it.</h4>
+			<h4>Each time when the game starts, the game will change the values of each totem.</h4>
 		</div>
+
+		<!-- random number div and wins/losses div -->
+		<div class="mainContent">
+		<div class="row animated bounceIn">
+			<div class="randomNumberDiv col-md-offset-3 col-md-6 col-xs-8 col-xs-offset-2 col-sm-offset-3 col-sm-6 col-lg-offset-1 col-lg-4">
+				<h2 id="randomNumber">random#</h2>
+			</div>
+			<div class="winsLossesDiv col-md-offset-3 col-md-6 col-xs-8 col-xs-offset-2 col-sm-offset-3 col-sm-6 col-lg-4 col-lg-offset-2">
+				<p id="winsTally">Wins: </p>
+				<p id="lossesTally">losses: </p>
+			</div>
+		</div>
+
+		<!-- totems -->
+		<div class="row animated zoomIn ">
+			<div class="col-md-2 col-sm-3  totem col-xs-3 col-lg-offset-0 col-md-offset-0 col-xs-offset-0 " value="totem1">
+				<img src="assets/images/blue.png" id="rock" class="img-responsive animated bounce infinite " alt="Totem1">
+			</div>
+			<div class="col-md-2 col-sm-3 col-md-offset-1 totem col-xs-3 " value="totem2">
+				<img src="assets/images/green.png" id="skull" class="img-responsive animated jello infinite " alt="Totem2">
+			</div>
+			<div class="col-md-2 col-sm-3 totem col-lg-offset-2 col-md-offset-2 col-xs-offset-0 col-xs-3 " value="totem3">
+				<img src="assets/images/red.png" id="fire" class="img-responsive animated rubberBand infinite" alt="Totem3">
+			</div>
+			<div class="col-md-2 col-sm-3 col-md-offset-1 totem col-xs-3 col-lg-offset-1" value="totem4">
+				<img src="assets/images/yellow.png" id="heart" class="img-responsive animated pulse infinite" alt="Totem4">
+			</div>
+		</div>
+
+		<!-- score text row -->
+		<div class="row animated bounceIn">
+			<div class="scoreDiv col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+				<p>Your total score is:</p>
+			</div>
+		</div>
+
+		<!-- user score div -->
+		<div class="row animated lightSpeedin">
+			<div class="scoreDiv col-sm-6 col-sm-offset-3 col-lg-offset-3 col-xs-offset-2 col-xs-8 col-md-offset-3 col-md-6 col-lg-6">
+				<h2 id="userScore">score</h2>
+			</div>
+		</div>
+        </div>
+    
+	<!-- end container	 -->
+	</div>
+	  
+       
+
+
+
+
+
+    <script type="text/javascript" src="assets/javascript/game.js">
+    </script>
 
 </body>
 </html>
+</doctype>

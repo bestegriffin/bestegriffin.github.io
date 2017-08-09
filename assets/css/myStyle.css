@@ -1,0 +1,77 @@
+body {
+	background: url("../images/adventure.jpg")no-repeat center center fixed;
+     background-size: cover;
+     text-align:center;
+}
+
+
+.jumbotron {
+    margin-top: 10%;
+	text-align: center;
+
+}
+
+.row {
+	margin-bottom: 10px;
+  animation-duration: 3.0s;
+  animation-delay: 1.2s;
+}
+
+
+
+.randomNumberDiv {
+    height: 80px;
+	font-size: 20px;
+	color:white;
+	background-color: #55392F;
+    border-radius:10px;
+}
+
+.winsLossesDiv {
+	height: 80px;
+	font-size: 20px;
+	color:white;
+	background-color: #D56036;
+    border-radius:10px;
+}
+
+.scoreDiv {
+	font-size:20px;
+	color:white;
+	background-color: #DC947A;
+    border-radius:10px;
+}
+
+.mainContent {
+background:rgba(0,0,0,0.2);
+border-radius:10px;
+margin-bottom:10px;    
+        }
+
+#skull {
+  animation-duration: 1.8s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+#fire {
+   animation-duration: 2s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+    
+}
+#rock {
+   animation-duration: 3s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;  
+    
+}
+#heart {
+   animation-duration: .8s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;  
+    
+}
+
+
+
