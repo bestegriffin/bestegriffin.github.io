@@ -1,45 +1,57 @@
 body {
-	background: url("../images/adventure.jpg")no-repeat center center fixed;
+	background: url("../images/background.jpg")no-repeat center center fixed;
      background-size: cover;
      text-align:center;
+     color:white;
+     font-size: 30px;
+}
+
+.jumbotron{
+  background: url('../images/spaceHeader.jpg')no-repeat center center ;
+  font-family: 'Sigmar One', sans-serif;
+  font-size: 25px;
+  color:white;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.btn-primary,.reset{
+  background-color: #313477;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  padding: 20px;
+  margin-top: 100px;
+}
+.btn-primary:hover, .reset:hover{
+  background-color: #202364;
 }
 
 
-.jumbotron {
-    margin-top: 5%;
-	text-align: center;
+h2, #message, #finalMessage{
+  font-family: Sigmar One;
+}
+
+.userChoice:hover{
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+
+
+.timeClockFlash {
+ animation-name: flash;
+ animation-iteration-count: infinite;
 
 }
 
+
+}
 .row {
 	margin-bottom: 10px;
   animation-duration: 3.0s;
   animation-delay: 1.2s;
-}
-
-
-
-.randomNumberDiv {
-    height: 80px;
-	font-size: 20px;
-	color:white;
-	background-color: #55392F;
-    border-radius:10px;
-}
-
-.winsLossesDiv {
-	height: 80px;
-	font-size: 20px;
-	color:white;
-	background-color: #D56036;
-    border-radius:10px;
-}
-
-.scoreDiv {
-	font-size:20px;
-	color:white;
-	background-color: #DC947A;
-    border-radius:10px;
 }
 
 .mainContent {
@@ -48,30 +60,6 @@ border-radius:10px;
 margin-bottom:10px;    
         }
 
-#skull {
-  animation-duration: 1.8s;
-  animation-delay: 5s;
-  animation-iteration-count: infinite;
-}
-
-#fire {
-   animation-duration: 2s;
-  animation-delay: 5s;
-  animation-iteration-count: infinite;
-    
-}
-#rock {
-   animation-duration: 3s;
-  animation-delay: 5s;
-  animation-iteration-count: infinite;  
-    
-}
-#heart {
-   animation-duration: .8s;
-  animation-delay: 5s;
-  animation-iteration-count: infinite;  
-    
-}
 
 
 
