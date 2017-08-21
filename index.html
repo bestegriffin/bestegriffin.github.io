@@ -1,51 +1,45 @@
-<doctype html>
-<html>
+<!Doctype html>
+
 <head>
-    <title> Space Trivia Game</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Sigmar+One" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-   <link rel="stylesheet" href="assets/css/myStyle.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
+<meta charset= "UTF-8">
+<title>Giphy Movie Lookup</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+<link rel= "stylesheet" type="text/css" href="assets/css/style.css">
 <body>
-    
-	<div class="container ">
 
-		<div class="jumbotron animated fadeInUpBig">
-			<h1>SPACE TRIVIA!</h1>
-		</div>
+<section>
+   <div class= "container-fluid">
+     <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center" id="header"> 
+          <h1 class="boldNBeautiful">Movie Gifs</h1> 
+      </div>
+   </div>
+</section>
+<section id="searchSection">
+      <div class="row">
+         <div class="col-lg-10 col-lg-offset-1 text-center" id="searchButtonsContainer"> </div>
+      </div>
+</section>
+<section class="container-fluid">
+    <div class="row">
 
-		<!-- random number div and wins/losses div -->
-		<div class="mainContent">
-		<div class="row animated zoomIn ">
-			<button class='btn btn-primary' id='startBtn'>Start</button>
-	        <!-- Question page -->
-	        <section id='timeClock'></section>
-	        	<div id='currentQuestion'></div>
-	        	<div class='question'></div>
-	        	<div class='answerList'></div>
-	        <!-- Answer Page -->
-	        	<div id=message></div>
-	        	<div id=correctedAnswer></div>
-	        <!-- Scoreboard -->
-	       	 	<div id=gameOver></div>
-	        	<div id=correctAnswers></div>
-	        	<div id=incorrectAnswers></div>
-	        	<div id=unanswered></div>
-	        	<div id='startOverBtn'></div>
-    	</div>
-		</div>
-    
-	<!-- end container	 -->
-	</div>
-	 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
-
+        
+        <div class= "col-lg-4 col-lg-offset-6">
+         <div class="ui labeled icon input"> 
+           <i class="tags icon"></i>
+            <input type="text" class="form-control" placeholder="Add New Movies" id="submitBox">
+            <button class="ui button right" type="submit" id="submitTerm">Search</button>
+            </div>
+    </div>
+</section>
+   <div class="row">
+      <div class="col-lg-10 col-lg-offset-1" id='showGIFS'> </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script> 
+<script src= "assets/js/app.js"></script>
 </body>
 </html>
-</doctype>

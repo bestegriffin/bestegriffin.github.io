@@ -1,51 +1,62 @@
-body{
-	background: url('../images/background.jpg');
-	font-family: 'Raleway', sans-serif;
-	font-size: 25px;
-	color:white;
+
+body {
+background: url("../../../../../Documents/EOB(GTB)/Edgeofthebox/Cinema.jpg")no-repeat center center fixed;
+background-size: cover;
+text-align:center;
 }
 
-header{
-	margin-bottom: 20px;
+#userInput {
+  margin-top: 100px;
 }
 
-.btn-primary,.reset{
-	background-color: #313477;
-	color: white;
-	font-family: 'Sigmar One', sans-serif;
-	font-size: 30px;
-	padding: 20px;
-	margin-top: 100px;
-}
-.btn-primary:hover, .reset:hover{
-	background-color: #202364;
+#header {
+  font-size: 100px;
 }
 
-.container{
-	margin-top: 50px;
-	text-align: center;
-	height: 100%;
-	width: 700px;
+body {
+  font-family: 'Ubuntu Mono', monospace;
 }
 
-h2, #message, #finalMessage{
-	font-family: Sigmar One;
+.gif {
+  border: #000 solid 2px;
+
 }
 
-.thisChoice:hover{
-	background-color: #202364;
-	color: white;
-	padding: 10px;
+.gifContainer {
+    margin:5px;
+  display: inline-grid;
+}
+.searchButtons {
+  margin: 3px 5px;
 }
 
-#gif{
-	margin: 30px;
+.gifRating {
+  color: #000;
+  font-size: 17px;
 }
 
-@media screen and (max-width:640px){
-	.container{
-		width: 500px;
-		margin-top: 200px;
-		size: 200%;
-	}	
+.gif:hover {
+  cursor: pointer;
+  border: #f1c40f solid 2.5px;
+}
+    .jumbotron:hover{  
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    }
+    
+#searchButtonsContainer {
+ margin-top: 10%;  
+    }
+#header {
+     font-size:50px;
+    padding:20px;
+}
+
+.boldNBeautiful {
+    font-size: 100px;
+    color:white;
+}
+
+.white {
+    color:white;
 }
