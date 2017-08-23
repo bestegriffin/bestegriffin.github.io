@@ -23,10 +23,11 @@
               searchGifs.searchTerms.push(userTerm);
               var newBttn = $('<button>');
               newBttn.attr("data-search", userTerm);
-              newBttn.addClass("btn");
-              newBttn.addClass("searchButtons");
+              newBttn.addClass("btn animated rotateInUpLeft ");
+              newBttn.addClass("searchButtons coralBtn");
               newBttn.text(userTerm);
               $('#searchButtonsContainer').append(newBttn);
+              $('#submitBox').val('');
           }
 
         },
@@ -52,18 +53,19 @@
                     var rating = response.data[i].rating;
                     console.log(rating);
                     var ratingSpan = $('<p>');
-                    ratingSpan.addClass('gifRating ui teal message white');
+                    ratingSpan.addClass('gifRating ui2 teal message white center');
                     ratingSpan.text("Rating: " + rating);
                     var newImg = $('<img>');
                     newImg.attr('src', stillLink);
                     newImg.attr('data-animate', animateLink);
                     newImg.attr('data-still', stillLink);
                     newImg.attr('data-state', "still")
-                    newImg.addClass('gif');
+                    newImg.addClass('gif img-responsive');
                     gifContain.prepend(ratingSpan);
                     gifContain.append(newImg);
 
                     $('#showGIFS').append(gifContain);
+
                 }
 
                 $('.gif').on("click", function() {
@@ -75,6 +77,9 @@
                         $(this).attr('src', $(this).data("still"));
                         $(this).attr("data-state", "still");
                     }
+                });
+                $('#clear').on("click", function() {
+                    $('.gifContainer').html("");
                 });
             });
         },

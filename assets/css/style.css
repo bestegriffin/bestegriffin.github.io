@@ -1,17 +1,11 @@
 
 body {
-background: url("assets/imgs/Cinema.jpg")no-repeat center center fixed;
+background: url(../imgs/Cinema.jpg)no-repeat center center fixed;
 background-size: cover;
 text-align:center;
 }
 
-#userInput {
-  margin-top: 100px;
-}
 
-#header {
-  font-size: 100px;
-}
 
 body {
   font-family: 'Ubuntu Mono', monospace;
@@ -23,7 +17,7 @@ body {
 }
 
 .gifContainer {
-    margin:5px;
+  margin:5px;
   display: inline-grid;
 }
 .searchButtons {
@@ -33,30 +27,83 @@ body {
 .gifRating {
   color: #000;
   font-size: 17px;
+
+}
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: #591E03;
+    border-color: #ddd;
+  }
+
+.gif.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .gif:hover {
   cursor: pointer;
   border: #f1c40f solid 2.5px;
 }
-    .jumbotron:hover{  
-    opacity: 0.5;
+    .panel , .panel-heading {  
+    background: none;
     filter: alpha(opacity=50);
     }
     
+.ui2.teal.message {
+    background-color: #E1F7F7;
+    color: #10A3A3;
+    box-shadow: 0 0 0 1px #10A3A3 inset, 0 0 0 0 transparent;
+    max-width: 100%;
+    font-size: 1em;
+    position: relative;
+    min-height: 1em;
+    margin: 1em 0;
+    background: #F8F8F9;
+    padding: 1em 1.5em;
+    line-height: 1.4285em;
+    border-radius: .28571429rem;
+    margin-top: 0;
+  }
+@keyframes CoralBtn {
+ 0% {background-color: #f08080;}
+ 50%{background-color: #f08080;}
+ 51%{background-color: #26a69a;}
+ 100%{background-color: #26a69a;}
+}
+
+
+.coralBtn {
+    animation-name: CoralBtn;  
+    animation-iteration-count: 5;  
+    animation-duration: 1.5s smooth;
+
+  /*transition: background-color 2.5s ease;
+  background-color: #f08080;*/
+}
+/*.coralBtn:visited {
+  transition: background-color .5s ease;
+  background-color: #26a69a; */
+}
+.ui.button:active{
+  color:white;
+  background: #26a69a;
+  }
 #searchButtonsContainer {
  margin-top: 10%;  
     }
-#header {
-     font-size:50px;
-    padding:20px;
+
+#clear {
+  border: #26a69a 1px solid;
+  color: #26a69a;
+  font-size: 200%;
+  background: none;
+}
+.bigButton {
+  max-width: 200%;
+  min-width:100%;
 }
 
-.boldNBeautiful {
-    font-size: 100px;
-    color:white;
-}
-
-.white {
-    color:white;
+.ui {
+ max-width:60%;
 }
