@@ -1,109 +1,93 @@
-
 body {
-background: url(../imgs/Cinema.jpg)no-repeat center center fixed;
-background-size: cover;
-text-align:center;
+	background: url(../imgs/Cinema.jpg)no-repeat center center fixed;
+	background-size: cover;
+	text-align: center;
 }
-
-
-
 body {
-  font-family: 'Ubuntu Mono', monospace;
+	font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif', 'sans-serif';
 }
-
 .gif {
-  border: #000 solid 2px;
-
+	border: #000 solid 2px;
 }
-
 .gifContainer {
-  margin:5px;
-  display: inline-grid;
+	margin: 5px;
+	display: inline-grid;
 }
 .searchButtons {
-  margin: 3px 5px;
+	margin: 3px 5px;
 }
-
 .gifRating {
-  color: #000;
-  font-size: 17px;
-
+	color: #000;
+	font-size: 17px;
 }
 .panel-default>.panel-heading {
-    color: #fff;
-    background-color: #591E03;
-    border-color: #ddd;
-  }
-
+	color: #fff;
+	background-color: #591E03;
+	border-color: #ddd;
+}
 .gif.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
 }
-
 .gif:hover {
-  cursor: pointer;
-  border: #f1c40f solid 2.5px;
+	cursor: pointer;
+	border: #f1c40f solid 2.5px;
 }
-    .panel , .panel-heading {  
-    background: none;
-    filter: alpha(opacity=50);
-    }
-    
+.panel, .panel-heading {
+	background: none;
+}
 .ui2.teal.message {
-    background-color: #E1F7F7;
-    color: #10A3A3;
-    box-shadow: 0 0 0 1px #10A3A3 inset, 0 0 0 0 transparent;
-    max-width: 100%;
-    font-size: 1em;
-    position: relative;
-    min-height: 1em;
-    margin: 1em 0;
-    background: #F8F8F9;
-    padding: 1em 1.5em;
-    line-height: 1.4285em;
-    border-radius: .28571429rem;
-    margin-top: 0;
-  }
+	background-color: #E1F7F7;
+	color: #10A3A3;
+	box-shadow: 0 0 0 1px #10A3A3 inset, 0 0 0 0 transparent;
+	max-width: 100%;
+	font-size: 1em;
+	position: relative;
+	min-height: 1em;
+	margin: 1em 0;
+	background: #F8F8F9;
+	padding: 1em 1.5em;
+	line-height: 1.4285em;
+	border-radius: .28571429rem;
+	margin-top: 0;
+}
 @keyframes CoralBtn {
- 0% {background-color: #f08080;}
- 50%{background-color: #f08080;}
- 51%{background-color: #26a69a;}
- 100%{background-color: #26a69a;}
+ 0% {
+background-color: #f08080;
 }
-
-
+ 50% {
+background-color: #f08080;
+}
+ 51% {
+background-color: #26a69a;
+}
+ 100% {
+background-color: #26a69a;
+}
+}
 .coralBtn {
-    animation-name: CoralBtn;  
-    animation-iteration-count: 5;  
-    animation-duration: 1.5s smooth;
-
-  /*transition: background-color 2.5s ease;
-  background-color: #f08080;*/
+	animation-name: CoralBtn;
+	animation-iteration-count: 5;
+	animation-duration: 1.5s smooth;
 }
-/*.coralBtn:visited {
-  transition: background-color .5s ease;
-  background-color: #26a69a; */
+.ui.button:active {
+	color: white;
+	background: #26a69a;
 }
-.ui.button:active{
-  color:white;
-  background: #26a69a;
-  }
 #searchButtonsContainer {
- margin-top: 10%;  
-    }
-
+	margin-top: 10%;
+}
 #clear {
-  border: #26a69a 1px solid;
-  color: #26a69a;
-  font-size: 200%;
-  background: none;
+	border: #26a69a 1px solid;
+	color: #26a69a;
+	font-size: 200%;
+	background: none;
 }
 .bigButton {
-  max-width: 200%;
-  min-width:100%;
+	max-width: 200%;
+	min-width: 100%;
 }
-
 .ui {
- max-width:60%;
+	max-width: 60%;
 }
